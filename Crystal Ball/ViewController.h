@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@class THCrystalBall;
 
+@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) THCrystalBall *crystalBall;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+- (void) makePrediction;
 @end

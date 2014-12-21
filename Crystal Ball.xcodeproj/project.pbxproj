@@ -21,6 +21,9 @@
 		FE84EDF319B7814A0021FB28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE84EDD519B7814A0021FB28 /* UIKit.framework */; };
 		FE84EDFB19B7814A0021FB28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE84EDF919B7814A0021FB28 /* InfoPlist.strings */; };
 		FE84EDFD19B7814A0021FB28 /* Crystal_BallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE84EDFC19B7814A0021FB28 /* Crystal_BallTests.m */; };
+		FED22B7D19B7CFFE00AA1795 /* THCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = FED22B7C19B7CFFE00AA1795 /* THCrystalBall.m */; };
+		FEEBC34419BE1F3100CB16FD /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEEBC34319BE1F3100CB16FD /* crystal_ball.mp3 */; };
+		FEEBC34619BE1FA500CB16FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEBC34519BE1FA500CB16FD /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		FE84EDF819B7814A0021FB28 /* Crystal BallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Crystal BallTests-Info.plist"; sourceTree = "<group>"; };
 		FE84EDFA19B7814A0021FB28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE84EDFC19B7814A0021FB28 /* Crystal_BallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crystal_BallTests.m; sourceTree = "<group>"; };
+		FED22B7B19B7CFFE00AA1795 /* THCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCrystalBall.h; sourceTree = "<group>"; };
+		FED22B7C19B7CFFE00AA1795 /* THCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCrystalBall.m; sourceTree = "<group>"; };
+		FEEBC34319BE1F3100CB16FD /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		FEEBC34519BE1FA500CB16FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEBC34619BE1FA500CB16FD /* AudioToolbox.framework in Frameworks */,
 				FE84EDD419B7814A0021FB28 /* CoreGraphics.framework in Frameworks */,
 				FE84EDD619B7814A0021FB28 /* UIKit.framework in Frameworks */,
 				FE84EDD219B7814A0021FB28 /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		FE84EDD019B7814A0021FB28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FEEBC34519BE1FA500CB16FD /* AudioToolbox.framework */,
 				FE84EDD119B7814A0021FB28 /* Foundation.framework */,
 				FE84EDD319B7814A0021FB28 /* CoreGraphics.framework */,
 				FE84EDD519B7814A0021FB28 /* UIKit.framework */,
@@ -112,13 +121,14 @@
 		FE84EDD719B7814A0021FB28 /* Crystal Ball */ = {
 			isa = PBXGroup;
 			children = (
-				FE84EDE019B7814A0021FB28 /* AppDelegate.h */,
-				FE84EDE119B7814A0021FB28 /* AppDelegate.m */,
+				FEEBC34319BE1F3100CB16FD /* crystal_ball.mp3 */,
 				FE84EDE319B7814A0021FB28 /* Main.storyboard */,
 				FE84EDE619B7814A0021FB28 /* ViewController.h */,
 				FE84EDE719B7814A0021FB28 /* ViewController.m */,
 				FE84EDE919B7814A0021FB28 /* Images.xcassets */,
 				FE84EDD819B7814A0021FB28 /* Supporting Files */,
+				FED22B7B19B7CFFE00AA1795 /* THCrystalBall.h */,
+				FED22B7C19B7CFFE00AA1795 /* THCrystalBall.m */,
 			);
 			path = "Crystal Ball";
 			sourceTree = "<group>";
@@ -126,6 +136,8 @@
 		FE84EDD819B7814A0021FB28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE84EDE019B7814A0021FB28 /* AppDelegate.h */,
+				FE84EDE119B7814A0021FB28 /* AppDelegate.m */,
 				FE84EDD919B7814A0021FB28 /* Crystal Ball-Info.plist */,
 				FE84EDDA19B7814A0021FB28 /* InfoPlist.strings */,
 				FE84EDDD19B7814A0021FB28 /* main.m */,
@@ -230,6 +242,7 @@
 			files = (
 				FE84EDEA19B7814A0021FB28 /* Images.xcassets in Resources */,
 				FE84EDDC19B7814A0021FB28 /* InfoPlist.strings in Resources */,
+				FEEBC34419BE1F3100CB16FD /* crystal_ball.mp3 in Resources */,
 				FE84EDE519B7814A0021FB28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +265,7 @@
 				FE84EDE819B7814A0021FB28 /* ViewController.m in Sources */,
 				FE84EDE219B7814A0021FB28 /* AppDelegate.m in Sources */,
 				FE84EDDE19B7814A0021FB28 /* main.m in Sources */,
+				FED22B7D19B7CFFE00AA1795 /* THCrystalBall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crystal Ball/Crystal Ball-Prefix.pch";
 				INFOPLIST_FILE = "Crystal Ball/Crystal Ball-Info.plist";
@@ -389,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crystal Ball/Crystal Ball-Prefix.pch";
 				INFOPLIST_FILE = "Crystal Ball/Crystal Ball-Info.plist";
@@ -456,6 +472,7 @@
 				FE84EE0219B7814A0021FB28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE84EE0319B7814A0021FB28 /* Build configuration list for PBXNativeTarget "Crystal BallTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +481,7 @@
 				FE84EE0519B7814A0021FB28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
